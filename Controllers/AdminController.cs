@@ -181,7 +181,7 @@ namespace Community2.Controllers
         }
 
         [HttpPost]
-        public void SavePromotion(promotion a)
+        public ActionResult SavePromotion(promotion a)
         {
             
             ctx.promotions.Add(a);
@@ -194,13 +194,13 @@ namespace Community2.Controllers
                 Console.WriteLine(e);
             }
             
-         /*   for (int i = 0; i < Request.Files.Count; i++)
+            for (int i = 0; i < Request.Files.Count; i++)
             {
                 HttpPostedFileBase file = Request.Files[i];
                 file.SaveAs(Server.MapPath(@"~\images\promotion\promotion_" + a.Id + ".jpeg"));
                 break;
-            } */
-            Response.Redirect("/Admin/Main");
+            }
+            return RedirectToAction("/Index");
         }
         public ActionResult createWorker()
         {
