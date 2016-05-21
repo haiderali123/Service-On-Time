@@ -551,9 +551,10 @@ if (Session["Admin"] != null)
         public void SaveCategory(category c)
         {
             ctx.categories.Add(c);
+            ctx.SaveChanges();
             try
             {
-                ctx.SaveChanges();
+                
             }
             catch (Exception e)
             {
