@@ -197,7 +197,7 @@ namespace Community2.Controllers
             for (int i = 0; i < Request.Files.Count; i++)
             {
                 HttpPostedFileBase file = Request.Files[i];
-                file.SaveAs(Server.MapPath(@"~\images\promotion\promotion_" + a.Id + ".jpeg"));
+                file.SaveAs(Server.MapPath(@"~\images\promotion\promotion_" + a.Id + ".jpg"));
                 break;
             }
             return RedirectToAction("/Index");
