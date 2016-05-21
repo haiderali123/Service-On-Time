@@ -75,9 +75,10 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="name" Type="ntext" Nullable="false" />
-    <Property Name="cnic" Type="numeric" Precision="13" Scale="0" Nullable="false" />
-    <Property Name="contact" Type="numeric" Precision="11" Scale="0" Nullable="false" />
+    <Property Name="cnic" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="contact" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="worker_Portfolio">
     <Key>

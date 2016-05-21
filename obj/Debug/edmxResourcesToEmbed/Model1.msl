@@ -68,9 +68,10 @@
     <EntitySetMapping Name="user_request">
       <EntityTypeMapping TypeName="Database1Model.user_request">
         <MappingFragment StoreEntitySet="user_request">
+          <ScalarProperty Name="cnic" ColumnName="cnic" />
+          <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="cnic" ColumnName="cnic" />
           <ScalarProperty Name="contact" ColumnName="contact" />
           <ScalarProperty Name="address" ColumnName="address" />
         </MappingFragment>

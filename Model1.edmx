@@ -80,9 +80,10 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="name" Type="ntext" Nullable="false" />
-          <Property Name="cnic" Type="numeric" Precision="13" Scale="0" Nullable="false" />
-          <Property Name="contact" Type="numeric" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="cnic" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="contact" Type="decimal" Precision="18" Scale="0" Nullable="false" />
           <Property Name="address" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="worker_Portfolio">
           <Key>
@@ -280,9 +281,10 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="cnic" Type="Decimal" Precision="13" Scale="0" Nullable="false" />
-          <Property Name="contact" Type="Decimal" Precision="11" Scale="0" Nullable="false" />
+          <Property Name="cnic" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="contact" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
           <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_services_ToTable">
           <End Role="category" Type="Self.category" Multiplicity="1" />
@@ -492,9 +494,10 @@
           <EntitySetMapping Name="user_request">
             <EntityTypeMapping TypeName="Database1Model.user_request">
               <MappingFragment StoreEntitySet="user_request">
+                <ScalarProperty Name="cnic" ColumnName="cnic" />
+                <ScalarProperty Name="username" ColumnName="username" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="cnic" ColumnName="cnic" />
                 <ScalarProperty Name="contact" ColumnName="contact" />
                 <ScalarProperty Name="address" ColumnName="address" />
               </MappingFragment>

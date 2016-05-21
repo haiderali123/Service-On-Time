@@ -249,6 +249,9 @@
     <Content Include="Content\superslides.css" />
     <Content Include="Content\_all-skins.css" />
     <Content Include="Content\_all-skins.min.css" />
+    <Content Include="dist\sweetalert-dev.js" />
+    <Content Include="dist\sweetalert.css" />
+    <Content Include="dist\sweetalert.min.js" />
     <Content Include="extra\bootstrap.css" />
     <Content Include="extra\bootstrap.js" />
     <Content Include="extra\Site.css" />
@@ -309,6 +312,7 @@
     </Content>
     <Content Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -324,6 +328,7 @@
     <Content Include="Scripts\demo.js" />
     <Content Include="Scripts\fastclick.js" />
     <Content Include="Scripts\fastclick.min.js" />
+    <Content Include="Scripts\jasny-bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -359,9 +364,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\wow.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -407,6 +410,12 @@
     <Content Include="Views\Admin\EditService.cshtml" />
     <Content Include="Views\Admin\EditWorker.cshtml" />
     <Content Include="Views\Admin\EditPromotion.cshtml" />
+    <Content Include="Views\Admin\SearchUser.cshtml" />
+    <Content Include="Views\Home\aboutUs.cshtml" />
+    <Content Include="Views\Admin\addCategory.cshtml" />
+    <Content Include="Views\Admin\EditCategory.cshtml" />
+    <Content Include="Views\Admin\viewCategory.cshtml" />
+    <Content Include="Views\Admin\ServiceRequests.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -423,6 +432,14 @@
       <Project>{4d5eecbe-6703-4445-a8dd-030dc0837034}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\admin\" />
+    <Folder Include="images\promotion\" />
+    <Folder Include="images\service\" />
+    <Folder Include="images\user\" />
+    <Folder Include="images\user_request\" />
+    <Folder Include="images\worker\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

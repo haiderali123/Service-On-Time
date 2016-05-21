@@ -19,5 +19,6 @@ namespace Community2
         public decimal cnic { get; set; }
         public decimal contact { get; set; }
         public string address { get; set; }
+        public string username { get; set; }
     }
 }

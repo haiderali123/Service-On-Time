@@ -22,7 +22,6 @@ namespace Community2.Controllers
 
         public AccountController(UserManager<ApplicationUser> userManager)
         {
-
             UserManager = userManager;
         }
 
@@ -65,10 +64,12 @@ namespace Community2.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
-        public ActionResult Register()
+        public Object Register()
         {
-            return View();
+                return View();  
         }
+
+        
 
         //
         // POST: /Account/Register
